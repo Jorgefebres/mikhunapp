@@ -1,5 +1,5 @@
 # mikhunapp
-Un proyecto para final de curso CodiGO - TECSUP
+Proyecto final de curso CodiGO - TECSUP
 
 
 * INSTALAR LAS DEPENDENCIAS FALTANTES (npm install)
