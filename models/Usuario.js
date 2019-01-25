@@ -42,7 +42,7 @@ module.exports = (sequelize, DataTypes) => {
     });
     Usuario.associate = function(models) {
         // Usuario hasMany Ubicaciones
-        Usuario.hasMany(models.Ubicacion, {foreignKey : 't_ubicacion_id'});
+        Usuario.belongsTo(models.Ubicacion, { foreignKey: 't_ubicacion_id' });
       };
     return Usuario;
 };

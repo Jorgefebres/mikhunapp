@@ -8,16 +8,16 @@ module.exports = (sequelize, DataTypes) => {
             primaryKey: true            
         },
         restaurant_puntuacion: DataTypes.INTEGER(1),
-        t_user_id: {
+        t_usuario_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
             foreignKey:true,
             references: {
                 // This is a reference to another model
-                // model: t_user,
+                // model: t_usuario,
                 
                 // This is the column name of the referenced model
-                key: 'user_id'
+                key: 'usuario_id'
             }
         }
     },
@@ -30,7 +30,7 @@ module.exports = (sequelize, DataTypes) => {
     });
     Restaurant.associate = function(models) {
         // Restaurant pertenece a Usuario
-        Restaurant.belongsTo(models.Usuario, { foreignKey: 't_user_id' });
+        Restaurant.belongsTo(models.Usuario, { foreignKey: 't_usuario_id' });
     };
     return Restaurant;
 };

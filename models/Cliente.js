@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
             primaryKey: true            
         },
         cliente_tipo: DataTypes.INTEGER(1),
-        t_user_id: {
+        t_usuario_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
             foreignKey:true,
@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
                 // model: t_user,
                 
                 // This is the column name of the referenced model
-                key: 'user_id'
+                key: 'usuario_id'
             }
         }
     },
@@ -30,7 +30,7 @@ module.exports = (sequelize, DataTypes) => {
     });
     Cliente.associate = function(models) {
         // Cliente pertenece a Usuario
-        Cliente.belongsTo(models.Usuario, { foreignKey: 't_user_id' });
+        Cliente.belongsTo(models.Usuario, { foreignKey: 't_usuario_id' });
     };
     return Cliente;
 };

@@ -19,15 +19,16 @@ module.exports = (sequelize, DataTypes) => {
             defaultValue: null,
             validate: { min: -180, max: 180 }
         },
-    }, {
-        validate: {
-            bothCoordsOrNone() {
-                if ((this.latitude === null) !== (this.longitude === null)) {
-                    throw new Error('Require either both latitude and longitude or neither')
-                }
-            }
-        }
-    },
+    }, 
+    // {
+    //     validate: {
+    //         bothCoordsOrNone() {
+    //             if ((this.latitude === null) !== (this.longitude === null)) {
+    //                 throw new Error('Require either both latitude and longitude or neither')
+    //             }
+    //         }
+    //     }
+    // },
     {
         //seccion de configuracion
         timestamps: false, //en true agrega el createdAt y updatedAt a las tablas
