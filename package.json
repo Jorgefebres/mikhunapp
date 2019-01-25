@@ -1,0 +1,37 @@
+{
+  "name": "mikhunapp",
+  "version": "1.0.0",
+  "description": "Aplicacion de fin de curso CodiGO - TECSUP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jorgefebres/mikhunapp.git"
+  },
+  "keywords": [
+    "mikhuna",
+    "cocina",
+    "comida",
+    "casera",
+    "app",
+    "perú",
+    "arequipa",
+    "codiGO",
+    "TECSUP"
+  ],
+  "author": "gryffitec",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jorgefebres/mikhunapp/issues"
+  },
+  "homepage": "https://github.com/Jorgefebres/mikhunapp#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-multiparty": "^2.2.0",
+    "express": "^4.16.4",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.42.0"
+  }
+}
