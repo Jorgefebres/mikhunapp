@@ -10,6 +10,7 @@ var app = express();
 //RUTAS
 var rutas_de_categoria = require('./routes/categoriaRoutes');
 var rutas_de_plato = require('./routes/platoRoutes');
+var rutas_de_usuario = require('./routes/usuarioRoutes');
 
 
 //MIDDLEWARES
@@ -35,5 +36,6 @@ app.use(function (err, req, res, next) {
 
 app.use('/API', rutas_de_categoria);
 app.use('/API', rutas_de_plato);
+app.use('/API', rutas_de_usuario);
 
 module.exports = app;

@@ -1,5 +1,4 @@
 
-var express = require('express');
 var Categoria = require('../models').Categoria;
 
 var categoriaController ={

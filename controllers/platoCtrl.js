@@ -1,5 +1,3 @@
-
-var express = require('express');
 var Plato = require('../models').Plato;
 
 var platoController ={
