@@ -7,10 +7,12 @@ var app = express();
 // require('./api/config/passport');
 // app.use(passport.initialize());
 
-// var rutas_de_conductor = require('./routes/project');
+//RUTAS
 var rutas_de_categoria = require('./routes/categoriaRoutes');
 var rutas_de_plato = require('./routes/platoRoutes');
 
+
+//MIDDLEWARES
 app.use(bodyparser.urlencoded({extended:false}));
 app.use(bodyparser.json());
 app.use((req, res, next) => {
@@ -31,7 +33,6 @@ app.use(function (err, req, res, next) {
 
 // cargando archivo de rutas
 
-// app.use('/API', rutas_de_conductor);
 app.use('/API', rutas_de_categoria);
 app.use('/API', rutas_de_plato);
 

@@ -6,9 +6,6 @@ var categoriaController ={
     home: function(req, res){
         return res.status(200).send({mensaje: "Home del controlador Categoria!!!"});
     },
-    home: function(req, res){
-        return res.status(200).send({mensaje: "Home del controlador Categoria!!!"});
-    },
     createCategoria: function (req, res){
         var objCategoria = new Categoria();
         var params = req.body;

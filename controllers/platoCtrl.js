@@ -6,9 +6,6 @@ var platoController ={
     home: function(req, res){
         return res.status(200).send({mensaje: "Home del controlador Plato!!!"});
     },
-    home: function(req, res){
-        return res.status(200).send({mensaje: "Home del controlador Plato!!!"});
-    },
     createPlato: function (req, res){
         var objPlato = new Plato();
         var params = req.body;
