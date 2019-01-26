@@ -5,7 +5,6 @@ var UsuarioController = require('../controllers/usuarioCtrl');
 
 var usuarioRouter = express.Router();
 
-
 usuarioRouter.get('/home-usuario', UsuarioController.home);
 usuarioRouter.post('/create-usuario', UsuarioController.createUsuario);
 usuarioRouter.get('/usuario/:id', UsuarioController.getUsuarioById);

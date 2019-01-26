@@ -16,7 +16,7 @@ var ubicacionController ={
         console.log('GUARDANDO Ubicacion!!!!');
         
         Ubicacion.create({ 
-            //categoria_nombre debe ser igual al nonbre del campo en la base de datos (ojo respetar Mayusculas y minusculas)
+            //ubicacion_latitud debe ser igual al nonbre del campo en la base de datos (ojo respetar Mayusculas y minusculas)
             ubicacion_latitud: objUbicacion.latitud,
             ubicacion_longitud: objUbicacion.longitud
         }).then(ubicacionGuardada => {

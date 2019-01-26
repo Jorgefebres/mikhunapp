@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "admin",
+    "password": "tormentor",
     "database": "db_mikhuna",
     "host": "127.0.0.1",
     "dialect": "mysql",

@@ -12,7 +12,8 @@ var rutas_de_categoria = require('./routes/categoriaRoutes');
 var rutas_de_plato = require('./routes/platoRoutes');
 var rutas_de_usuario = require('./routes/usuarioRoutes');
 var rutas_de_ubicacion = require('./routes/ubicacionRoutes');
-
+var rutas_de_cliente = require('./routes/clienteRoutes');
+var rutas_de_restaurant = require('./routes/restaurantRoutes');
 
 //MIDDLEWARES
 app.use(bodyparser.urlencoded({extended:false}));
@@ -39,5 +40,7 @@ app.use('/API', rutas_de_categoria);
 app.use('/API', rutas_de_plato);
 app.use('/API', rutas_de_usuario);
 app.use('/API', rutas_de_ubicacion);
+app.use('/API', rutas_de_restaurant);
+app.use('/API', rutas_de_cliente);
 
 module.exports = app;

@@ -5,7 +5,6 @@ var CategoriaController = require('../controllers/categoriaCtrl');
 
 var categoriaRouter = express.Router();
 
-
 categoriaRouter.get('/home-categoria', CategoriaController.home);
 categoriaRouter.post('/create-categoria', CategoriaController.createCategoria);
 categoriaRouter.get('/categoria/:id', CategoriaController.getCategoriaById);
