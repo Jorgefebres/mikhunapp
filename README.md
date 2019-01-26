@@ -1,6 +1,6 @@
 # MIKHUNAPP
 
-_Lado del servidor de la aplicacion **MIKHUNA** para el proyecto final del curso **CodiGo** - TECSUP - Arequipa_
+_Servidor de la aplicacion **MIKHUNA** para el proyecto final del curso **CodiGo** - TECSUP - Arequipa_
 
 ## Instalacion 🚀
 
@@ -19,13 +19,14 @@ _Se requiere tener instalado los siguientes paquetes o módulos:_
 * Express
 * Nodejs
 * Body-Parser
+* ...
 ```
 
 ## Construido con 🛠️
 
 _Back-End_
 * [Node.js](https://dev.mysql.com/doc/) - Como entorno de ejecucion del back-end.
-* [Express](http://expressjs.com/es/api.html) - Como framework de node-js.
+* [Express](http://expressjs.com/es/api.html) - Como framework de desarrollo para node-js.
 * [Mysql](https://dev.mysql.com/doc/) - Como gestor de base de datos.
 * [Sequelize](http://docs.sequelizejs.com/manual/installation/getting-started.html) - Como ORM para mysql.
 
