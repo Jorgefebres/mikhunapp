@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "admin",
-    "database": "db_mikhuna",
-    "host": "127.0.0.1",
+    "username": "id8584305_mikhuna",
+    "password": "mikhuna",
+    "database": "id8584305_db_mikhuna",
+    "host": "mikhunappp.000webhostapp.com",
     "dialect": "mysql",
     "operatorsAliases": false
   },
