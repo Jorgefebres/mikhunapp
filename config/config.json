@@ -1,24 +1,26 @@
 {
   "development": {
-    "username": "id8584305_mikhuna",
-    "password": "mikhuna",
-    "database": "id8584305_db_mikhuna",
-    "host": "mikhunappp.000webhostapp.com",
+    "username": "sql10276239",
+    "password": "GL6xlM61QQ",
+    "database": "sql10276239",
+    "host": "sql10.freemysqlhosting.net",
     "dialect": "mysql",
     "operatorsAliases": false
   },
   "test": {
-    "username": "root",
-    "password": "tormentor",
-    "database": "db_mikhuna_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "sql10276239",
+    "password": "GL6xlM61QQ",
+    "database": "sql10276239",
+    "host": "sql10.freemysqlhosting.net",
+    "dialect": "mysql",
+    "operatorsAliases": false
   },
   "production": {
-    "username": "root",
-    "password": "tormentor",
-    "database": "db_mikhuna_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "sql10276239",
+    "password": "GL6xlM61QQ",
+    "database": "sql10276239",
+    "host": "sql10.freemysqlhosting.net",
+    "dialect": "mysql",
+    "operatorsAliases": false
   }
 }

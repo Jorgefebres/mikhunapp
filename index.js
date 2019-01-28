@@ -4,7 +4,7 @@ const Sequelize = require('sequelize');
 var models = require("./models");
 var app = require('./app');
 // var puerto = 3700;
-var port = app.set('port', process.env.PORT || 3000);
+var port = process.env.PORT || 3000;
 
 //Sync Database
 models.sequelize.sync().then(()=>{
