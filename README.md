@@ -36,3 +36,4 @@ _Los Autores y colaboradores de este proyecto fueron:_
 
 * **Jorge Adolfo Febres Cabrera** - *Análisis, Desarrollo e Implementación* - [Jorge Febres](https://github.com/Jorgefebres/)
 * **Gabriel Cari Vargas** - *Análisis, Desarrollo e Implementación* - [Gabriel Cari](https://github.com/GaboAlex)
+* **Diego Zegarra Miranda** - *Análisis, Desarrollo e Implementación* - [El Diegus](https://github.com/diegozeta)
