@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
             foreignKey:true,
             references: {
                 // This is a reference to another model
-                // model: t_categoria,
+                model: 't_categoria',
                 
                 // This is the column name of the referenced model
                 key: 'categoria_id'
@@ -29,8 +29,10 @@ module.exports = (sequelize, DataTypes) => {
         tableName: 't_plato',//define el nombre de la tabla
     });
     Plato.associate = function(models) {
-        // Plato pertenece a Categoria
         Plato.belongsTo(models.Categoria, { foreignKey: 't_categoria_id' });
+        Plato.hasMany(models.Combo, {foreignKey : 't_plato_id'});
+        Plato.hasMany(models.MenuPlato, {foreignKey : 't_plato_id'});
     };
+
     return Plato;
 };

@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
             foreignKey:true,
             references: {
                 // This is a reference to another model
-                // model: t_usuario,
+                model: 't_usuario',
                 
                 // This is the column name of the referenced model
                 key: 'usuario_id'

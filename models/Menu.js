@@ -1,13 +1,13 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-    var Cliente = sequelize.define('Cliente', {
-        cliente_id: {
-            type: DataTypes.INTEGER,
+    var Menu = sequelize.define('Menu', {
+        menu_id: {
             allowNull: false,
             autoIncrement: true,
-            primaryKey: true            
+            primaryKey: true,
+            type: DataTypes.INTEGER
         },
-        cliente_tipo: DataTypes.INTEGER(1),
+        menu_fecha: DataTypes.DATEONLY,
         t_usuario_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
@@ -20,16 +20,19 @@ module.exports = (sequelize, DataTypes) => {
                 key: 'usuario_id'
             }
         }
-    },
+    }, 
     {
         //seccion de configuracion
         timestamps: false, //en true agrega el createdAt y updatedAt a las tablas
         // freezeTableName: true, // Model tableName will be the same as the model name
         underscored: true, // don't use camelcase for automatically added attributes but underscore style, so updatedAt will be updated_at
-        tableName: 't_cliente',//define el nombre de la tabla
+        tableName: 't_menu',//define el nombre de la tabla
     });
-    Cliente.associate = function(models) {
-        Cliente.belongsTo(models.Usuario, { foreignKey: 't_usuario_id' });
+    Menu.associate = function(models) {
+        // Menu pertenece a Categoria
+        Menu.belongsTo(models.Usuario, { foreignKey: 't_usuario_id' });
+        Menu.hasMany(models.MenuPlato, {foreignKey : 't_menu_id'});
+        Menu.hasMany(models.Combo, {foreignKey : 't_menu_id'});
     };
-    return Cliente;
+    return Menu;
 };

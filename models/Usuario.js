@@ -27,7 +27,7 @@ module.exports = (sequelize, DataTypes) => {
             foreignKey:true,
             references: {
                 // This is a reference to another model
-                // model: t_user,                
+                model: 't_ubicacion',                
                 // This is the column name of the referenced model
                 key: 'ubicacion_id'
             }
@@ -41,8 +41,11 @@ module.exports = (sequelize, DataTypes) => {
         tableName: 't_usuario',//define el nombre de la tabla
     });
     Usuario.associate = function(models) {
-        // Usuario hasMany Ubicaciones
         Usuario.belongsTo(models.Ubicacion, { foreignKey: 't_ubicacion_id' });
+        Usuario.hasMany(models.Cliente, {foreignKey : 't_usuario_id'});
+        Usuario.hasMany(models.Menu, {foreignKey : 't_usuario_id'});
+        Usuario.hasMany(models.Pedido, {foreignKey : 't_usuario_id'});
+        Usuario.hasMany(models.Restaurant, {foreignKey : 't_usuario_id'});
       };
     return Usuario;
 };
