@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
             primaryKey: true,
             type: DataTypes.INTEGER
         },
-        pedido_tipo_compra: DataTypes.STRING(50),
+        pedido_tipo: DataTypes.STRING(50),
         pedido_fecha:DataTypes.DATE,
         pedido_total:DataTypes.DECIMAL,
         t_usuario_id: {

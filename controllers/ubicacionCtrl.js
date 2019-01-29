@@ -9,7 +9,7 @@ var ubicacionController ={
         var objUbicacion = new Ubicacion();
         var params = req.body;
         //params.nombre debe ser igual que los parametros recibidos desde el cliente o postman
-        objUbicacion.latitud = params.latitud;
+            objUbicacion.latitud = params.latitud;
         objUbicacion.longitud = params.longitud;
         
         console.log('Recibido: ', objUbicacion.latitud, objUbicacion.longitud);

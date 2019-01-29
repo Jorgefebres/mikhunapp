@@ -18,7 +18,7 @@ var pedidoController ={
         
         Pedido.create({ 
             //pedido_nombre debe ser igual al nonbre del campo en la base de datos (ojo respetar Mayusculas y minusculas)
-            pedido_tipo: objPedido.tipo,
+            pedido_tipo: objPedido.pedido_tipo,
             pedido_fecha: objPedido.pedido_fecha,
             pedido_total: objPedido.pedido_total,
             t_usuario_id: objPedido.usuario_id,

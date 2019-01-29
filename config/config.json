@@ -1,24 +1,26 @@
 {
   "development": {
-    "username": "root",
-    "password": "admin",
-    "database": "db_mikhuna",
-    "host": "127.0.0.1",
+    "username": "gtslsac1_mikhuna",
+    "password": "u[b$pWz5rF6p",
+    "database": "gtslsac1_mikhuna",
+    "host": "gtslsac.com",
     "dialect": "mysql",
     "operatorsAliases": false
   },
   "test": {
-    "username": "root",
-    "password": "admin",
-    "database": "db_mikhuna_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "gtslsac1_mikhuna",
+    "password": "u[b$pWz5rF6p",
+    "database": "gtslsac1_mikhuna",
+    "host": "gtslsac.com",
+    "dialect": "mysql",
+    "operatorsAliases": false
   },
   "production": {
-    "username": "root",
-    "password": "admin",
-    "database": "db_mikhuna_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "gtslsac1_mikhuna",
+    "password": "u[b$pWz5rF6p",
+    "database": "gtslsac1_mikhuna",
+    "host": "gtslsac.com",
+    "dialect": "mysql",
+    "operatorsAliases": false
   }
 }
