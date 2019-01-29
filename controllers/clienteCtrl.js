@@ -43,7 +43,7 @@ var clienteController ={
         });
     },
     getAllClientes : function (req, res){
-        console.log('Trayendo todas las categorías');
+        console.log('Trayendo todas los clientes');
         Cliente.findAll().then(clientesEncontrados => {
             if(clientesEncontrados.length == 0){
                 return res.status(400).send({error: "No se encontró ningun cliente en la base de datos"});

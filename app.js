@@ -14,6 +14,11 @@ var rutas_de_usuario = require('./routes/usuarioRoutes');
 var rutas_de_ubicacion = require('./routes/ubicacionRoutes');
 var rutas_de_cliente = require('./routes/clienteRoutes');
 var rutas_de_restaurant = require('./routes/restaurantRoutes');
+var rutas_de_combo = require('./routes/comboRoutes');
+var rutas_de_menu = require('./routes/menuRoutes');
+var rutas_de_pedido = require('./routes/pedidoRoutes');
+var rutas_de_menuPlato = require('./routes/menuPlatoRoutes');
+var rutas_de_pedidoDetalle = require('./routes/pedidoDetalleRoutes');
 
 //MIDDLEWARES
 app.use(bodyparser.urlencoded({extended:false}));
@@ -42,5 +47,10 @@ app.use('/API', rutas_de_usuario);
 app.use('/API', rutas_de_ubicacion);
 app.use('/API', rutas_de_restaurant);
 app.use('/API', rutas_de_cliente);
+app.use('/API', rutas_de_combo);
+app.use('/API', rutas_de_menu);
+app.use('/API', rutas_de_pedido);
+app.use('/API', rutas_de_menuPlato);
+app.use('/API', rutas_de_pedidoDetalle);
 
 module.exports = app;
