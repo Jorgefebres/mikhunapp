@@ -1,25 +1,25 @@
 {
   "development": {
-    "username": "sql10276239",
-    "password": "GL6xlM61QQ",
-    "database": "sql10276239",
-    "host": "sql10.freemysqlhosting.net",
+    "username": "gtslsac1_mikhuna",
+    "password": "u[b$pWz5rF6p",
+    "database": "gtslsac1_mikhuna",
+    "host": "gtslsac.com",
     "dialect": "mysql",
     "operatorsAliases": false
   },
   "test": {
-    "username": "sql10276239",
-    "password": "GL6xlM61QQ",
-    "database": "sql10276239",
-    "host": "sql10.freemysqlhosting.net",
+    "username": "gtslsac1_mikhuna",
+    "password": "u[b$pWz5rF6p",
+    "database": "gtslsac1_mikhuna",
+    "host": "gtslsac.com",
     "dialect": "mysql",
     "operatorsAliases": false
   },
   "production": {
-    "username": "sql10276239",
-    "password": "GL6xlM61QQ",
-    "database": "sql10276239",
-    "host": "sql10.freemysqlhosting.net",
+    "username": "gtslsac1_mikhuna",
+    "password": "u[b$pWz5rF6p",
+    "database": "gtslsac1_mikhuna",
+    "host": "gtslsac.com",
     "dialect": "mysql",
     "operatorsAliases": false
   }
