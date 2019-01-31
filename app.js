@@ -45,6 +45,9 @@ app.use(function (err, req, res, next) {
 
 // cargando archivo de rutas
 
+app.get('/',function(req, res, next){
+  res.send('hola ')
+});
 app.use('/API', rutas_de_categoria);
 app.use('/API', rutas_de_plato);
 app.use('/API', rutas_de_usuario);

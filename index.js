@@ -14,3 +14,10 @@ models.sequelize.sync().then(()=>{
 }).catch(err=>{
     console.log("Jorgito parece que tenemos un problema. Error: " + err);
 });
+
+
+// models.sequelize.sync().then(function() {
+//     http.createServer(app).listen(app.get('port'), function(){
+//       console.log('Conexion con la base de datos DB_Mikhuna exitosa!! ' + app.get('port'));
+//     });
+//   });

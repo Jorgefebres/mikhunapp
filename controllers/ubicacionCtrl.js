@@ -85,5 +85,18 @@ var ubicacionController ={
             return res.status(500).send({error: "ERROR: " + err});
         });
     },
+    getRestaurantUbicaciones : function(req, res){
+        console.log('Trayendo todas las ubicaciones de los restaurantes');
+        Ubicacion.sequelize.query("select u.usuario_name, a.ubicacion_latitud, a.ubicacion_longitud from t_usuario u, t_restaurant r, t_ubicacion a where u.usuario_id = r.t_usuario_id AND a.ubicacion_id = u.t_ubicacion_id", { type:Ubicacion.sequelize.QueryTypes.SELECT})
+            .then((UbiRes)=> {
+                if(!UbiRes){
+                    return res.status(404).send({error:"Error, la ubicacion no existe"});
+                }else{
+                    return res.json(UbiRes)
+                }
+            }).catch((err)=>{
+                return res.status(500).send({error:"ERROR: " + err});
+            });
+    }
 };
 module.exports = ubicacionController;

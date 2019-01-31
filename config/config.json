@@ -16,10 +16,10 @@
     "operatorsAliases": false
   },
   "production": {
-    "username": "gtslsac1_mikhuna",
-    "password": "u[b$pWz5rF6p",
-    "database": "gtslsac1_mikhuna",
-    "host": "gtslsac.com",
+    "username": "sql10276756",
+    "password": "cviRyDye3h",
+    "database": "sql10276756",
+    "host": "sql10.freemysqlhosting.net",
     "dialect": "mysql",
     "operatorsAliases": false
   }

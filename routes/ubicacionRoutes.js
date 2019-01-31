@@ -11,5 +11,6 @@ ubicacionRouter.get('/ubicacion/:id', UbicacionController.getUbicacionById);
 ubicacionRouter.get('/ubicaciones', UbicacionController.getAllUbicacion);
 ubicacionRouter.patch('/update-ubicacion/:id', UbicacionController.updateUbicacionById);
 ubicacionRouter.delete('/delete-ubicacion/:id', UbicacionController.deleteUbicacionById);
+ubicacionRouter.get('/ubicacion-restaurant',UbicacionController.getRestaurantUbicaciones);
 
 module.exports = ubicacionRouter;
