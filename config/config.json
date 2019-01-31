@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "gtslsac1_mikhuna",
-    "password": "u[b$pWz5rF6p",
-    "database": "gtslsac1_mikhuna",
-    "host": "gtslsac.com",
+    "username": "root",
+    "password": "admin",
+    "database": "mikhuna",
+    "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
   },

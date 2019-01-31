@@ -7,10 +7,10 @@ var port = process.env.PORT || 3000;
 
 //Sync Database
 models.sequelize.sync().then(()=>{
-    console.log("Conexion con la base de datos DB_Mikhuna exitosa!!");
+    console.log("Sequelize se conectó correctamente a la Database");
     app.listen(port,()=>{
-        console.log("Servidor corriendo perfectamente => localhost:3700");
+        console.log("API ejecutándose en puerto " + port);
     });
 }).catch(err=>{
-    console.log("Error: " + err);
+    console.log("Jorgito parece que tenemos un problema. Error: " + err);
 });

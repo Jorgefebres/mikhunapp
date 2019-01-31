@@ -5,21 +5,21 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.INTEGER,
             allowNull: false,
             autoIncrement: true,
-            primaryKey: true            
+            primaryKey: true
         },
-        ubicacion_latitud:{ 
-            type: DataTypes.INTEGER,
+        ubicacion_latitud:{
+            type: DataTypes.DECIMAL(10,6),
             allowNull: true,
             defaultValue: null,
             validate: { min: -90, max: 90 }
         },
         ubicacion_longitud: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.DECIMAL(10,6),
             allowNull: true,
             defaultValue: null,
             validate: { min: -180, max: 180 }
         },
-    }, 
+    },
     // {
     //     validate: {
     //         bothCoordsOrNone() {

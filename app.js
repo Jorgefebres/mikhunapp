@@ -6,6 +6,10 @@ var app = express();
 
 // require('./api/config/passport');
 // app.use(passport.initialize());
+app.get('/', function(req, res) {
+  res.send('funcionando');
+});
+
 
 //RUTAS
 var rutas_de_categoria = require('./routes/categoriaRoutes');
