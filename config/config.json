@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "admin",
-    "database": "mikhuna",
-    "host": "127.0.0.1",
+    "username": "uzpilqmzlatcxxx7751a",
+    "password": "fYAiVCDiUmSTERIbRd15",
+    "database": "bk3azyeay9rhicr9rwmz",
+    "host": "bk3azyeay9rhicr9rwmz-mysql.services.clever-cloud.com",
     "dialect": "mysql",
     "operatorsAliases": false
   },
