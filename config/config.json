@@ -15,12 +15,12 @@
     "dialect": "mysql",
     "operatorsAliases": false
   },
-  "production": {
-    "username": "sql10276756",
-    "password": "cviRyDye3h",
-    "database": "sql10276756",
-    "host": "sql10.freemysqlhosting.net",
+  "produccion": {
+    "username": "uzpilqmzlatcxxx7751a",
+    "password": "fYAiVCDiUmSTERIbRd15",
+    "database": "bk3azyeay9rhicr9rwmz",
+    "host": "bk3azyeay9rhicr9rwmz-mysql.services.clever-cloud.com",
     "dialect": "mysql",
     "operatorsAliases": false
-  }
+  },
 }
