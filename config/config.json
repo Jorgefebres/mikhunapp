@@ -22,5 +22,5 @@
     "host": "bk3azyeay9rhicr9rwmz-mysql.services.clever-cloud.com",
     "dialect": "mysql",
     "operatorsAliases": false
-  },
+  }
 }
