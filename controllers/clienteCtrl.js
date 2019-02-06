@@ -17,7 +17,7 @@ var clienteController ={
         Cliente.create({
             //cliente_nombre debe ser igual al nonbre del campo en la base de datos (ojo respetar Mayusculas y minusculas)
 
-            cliente_tipo: objCliente.tipo,
+            cliente_tipo: objCliente.cliente_tipo,
             t_usuario_id: objCliente.usuario_id,
 
         }).then(clienteGuardado => {
