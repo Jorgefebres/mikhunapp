@@ -5,9 +5,21 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.INTEGER,
             allowNull: false,
             autoIncrement: true,
-            primaryKey: true            
+            primaryKey: true
         },
         restaurant_puntuacion: DataTypes.INTEGER(1),
+        restaurant_ubicacion: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            foreignKey:true,
+            references: {
+                // This is a reference to another model
+                model: 't_ubicacion',
+
+                // This is the column name of the referenced model
+                key: 'ubicacion_id'
+            }
+        },
         t_usuario_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
@@ -15,7 +27,7 @@ module.exports = (sequelize, DataTypes) => {
             references: {
                 // This is a reference to another model
                 model: 't_usuario',
-                
+
                 // This is the column name of the referenced model
                 key: 'usuario_id'
             }
