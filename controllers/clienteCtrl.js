@@ -10,13 +10,13 @@ var clienteController ={
         //params.nombre debe ser igual que los parametros recibidos desde el cliente o postman
         objCliente.cliente_tipo = params.cliente_tipo;
         objCliente.usuario_id = params.usuario_id;
-        
+
         console.log('RECIBIDO:::::: ', objCliente.cliente_tipo, objCliente.usuario_id);
         console.log('GUARDANDO CLIENTE!!!!');
-        
-        Cliente.create({ 
+
+        Cliente.create({
             //cliente_nombre debe ser igual al nonbre del campo en la base de datos (ojo respetar Mayusculas y minusculas)
-            
+
             cliente_tipo: objCliente.tipo,
             t_usuario_id: objCliente.usuario_id,
 
@@ -30,9 +30,9 @@ var clienteController ={
         });
     },
     getClienteById : function (req, res){
-        var id = req.params.id;        
-        console.log('id recibido: ', id);   
-        
+        var id = req.params.id;
+        console.log('id recibido: ', id);
+
         Cliente.findByPk(id).then(cliente => {
             if(!cliente){
                 return res.status(404).send({ error : "No se encontró ningun cliente con ese id en la base de datos"});
@@ -58,12 +58,12 @@ var clienteController ={
         var id = req.params.id;
         var parametrosNuevos = req.body;
         console.log('Id Recibido: ', id);
-        
+
         Cliente.update({
             cliente_nombre: parametrosNuevos.nombre,
             t_categoria_id: parametrosNuevos.categoria_id,
-        },{ 
-            where: { cliente_id: id } 
+        },{
+            where: { cliente_id: id }
         }).then(clienteActualizado => {
             if(!clienteActualizado){
                 return res.status(404).send({ error : "Error, No existe ese cliente en la base de datos"});
@@ -75,8 +75,8 @@ var clienteController ={
     },
     deleteClienteById : function (req, res){
         var clienteId = req.params.id;
-        Cliente.destroy({ 
-            where: { cliente_id: clienteId } 
+        Cliente.destroy({
+            where: { cliente_id: clienteId }
         }).then(clienteEliminado => {
             if(!clienteEliminado){
                 return res.status(404).send({ error : "Error, el cliente no existe en la base de datos"});
