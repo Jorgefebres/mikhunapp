@@ -7,7 +7,7 @@ var app = express();
 // require('./api/config/passport');
 // app.use(passport.initialize());
 app.get('/', function (req, res) {
-  res.send('funcionando');
+  res.send('API CRUD ejecutandose correctamente Ver logs con heroku logs --tail');
 });
 
 
